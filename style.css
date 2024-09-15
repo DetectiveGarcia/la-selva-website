@@ -283,3 +283,34 @@ a span{
     font-weight: 100;
     font-size: 5rem;
 }
+
+
+h1{
+    font-weight: 300;
+}
+
+p{
+    font-weight: 200;
+}
+
+/*Music page*/
+
+.music-content{
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 3em 3em 1.5em 3em; /*Repeterar från about-content*/
+}
+
+
+.music-grid{
+
+    display: grid;
+    /* gap: 3rem; */
+}
+
+.track{
+    /* border: 1px solid antiquewhite; */
+    margin: 0.5rem 0;
+}
