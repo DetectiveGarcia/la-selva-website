@@ -222,8 +222,15 @@ a span{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+
     /* background-color: #000; */
+}
+
+.about-content > h1{
+    /* font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 1rem; */
+    text-align: center;
 }
 
 .about-content{
