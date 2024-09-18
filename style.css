@@ -300,13 +300,13 @@ p{
     flex-direction: column;
 
 
-    padding: 3em 3em 1.5em 3em; /*Repeterar från about-content*/
+    padding: 1.5em 1.5em 0.75em 1.5em; /*Repeterar från about-content*/
 }
 
 
 .music-grid{
 
-    display: grid;
+    /* display: grid; */
     /* gap: 3rem; */
 }
 
