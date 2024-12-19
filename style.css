@@ -447,8 +447,19 @@ a{
   }
   li{
     margin: 1rem;
-  };
+  }
 
+  .link::after {
+    content: "";
+    height: 1px;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    background-color: #333;
+    position: absolute;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
 
 }   
 
