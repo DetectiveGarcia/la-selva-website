@@ -246,7 +246,7 @@ a span {
   flex-direction: column;
   justify-content: center;
   border-top: 1px solid antiquewhite;
-  /* gap: 1rem; */
+  gap: 1rem; 
   margin: 0 5rem;
 }
 
@@ -302,7 +302,7 @@ p {
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-*,
+/* *,
 *::after,
 *::before {
   box-sizing: border-box;
@@ -311,7 +311,7 @@ p {
 body {
   margin: 0;
   background: #1e1c1c;
-}
+} */
 
 :root {
   --bar-width: 30px;
