@@ -46,8 +46,8 @@ nav {
   text-transform: uppercase;
   color: antiquewhite;
   font-weight: 500;
-  font-size: 12px;
-  margin: 0 1em;
+  font-size: 14px;
+  margin: 0 0.9em;
   position: relative;
   overflow: hidden;
 }
@@ -61,7 +61,7 @@ a {
 a span {
   display: inline-block;
   transform: translateY(100%);
-  animation: reveal 1s ease-in-out forwards;
+  animation: reveal 2.5s ease-in-out forwards;
 }
 
 @keyframes reveal {
@@ -97,7 +97,7 @@ a span {
   /* padding: 1em 0; */
   z-index: 1000;
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -319,8 +319,8 @@ body {
   --hamburger-gap: 6px;
   --foreground: antiquewhite;
   --background: #333;
-  --hamburger-margin: 8px;
-  --animation-timing: 200ms ease-in-out;
+  --hamburger-margin: 12px;
+  --animation-timing: 500ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 
 }
@@ -331,7 +331,7 @@ body {
   flex-direction: column;
   gap: var(--hamburger-gap);
   width: max-content; /*Gör att width fylls upp all yta av vad man nu har i .hamburger-menui*/
-  position: absolute; /*Gör att man kan använda top, left, right, och bottom egenskaperna */
+  position: fixed; /*Gör att man kan använda top, left, right, och bottom egenskaperna */
   top: var(--hamburger-margin);
   left: var(--hamburger-margin);
   z-index: 2; /* Gör att den är överst när sidebaren dyker upp */
@@ -427,7 +427,7 @@ a{
 
   .hamburger-menu {
     display: flex; /* Show hamburger menu on small screens */
-    position: fixed;
+
     
   }
 
@@ -459,6 +459,19 @@ a{
     position: absolute;
     transition: width 0.3s ease-in-out;
     transform: translateX(-50%);
+  }
+  .logo {
+    font-family: "Streetbrush";
+    font-size: clamp(13px, 1.5vw + 1.5rem, 88px);
+    text-align: center;
+    position: fixed;
+    top: 0.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    /* padding: 1em 0; */
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
   }
 
 }   
